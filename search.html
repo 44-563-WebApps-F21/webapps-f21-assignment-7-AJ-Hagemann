@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 
@@ -7,53 +7,79 @@
 
     <h2>Animal hunt by AJ Hagemann</h2>
 
-    <p>Click on the squares to search for wild life</p>
-
-    <p id="tires">Number of tries is zero</p>
-
-    <p id="distance">Distance is unknown</p>
+    <div class="container-fluid">
+        <p>Click on the squares to search for wildlife</p>
+        <div class="row">
+          <p class="col-sm-2" id="tries">Number of tries: </p>
+          <p class="col-sm-2" id="distance">Distance is Unknown</p>
+        </div>
 
     <div class="container-fluid">
-
-
-        
         <div class="row"> 
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "0" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "1" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "2" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "3" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "4" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "5" onclick = "check(this.id)" alt="bush" width="200" height="200">
             </div>
 
             <div class= "row"> 
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "6" onclick = "check(this.id)"   alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "7" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "8" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "9" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "10" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "11" onclick = "check(this.id)" alt="bush" width="200" height="200">
             </div>
 
             <div class= "row"> 
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "12" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "13" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "14" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "15" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "16" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "17" onclick = "check(this.id)" alt="bush" width="200" height="200">
             </div>
 
             <div class= "row"> 
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
-                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "18" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "19" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "20" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "21" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "22" onclick = "check(this.id)" alt="bush" width="200" height="200">
+                <img src="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/Buxus_sempervirens_2.jpg?raw=1" class="col-sm-2" id = "23" onclick = "check(this.id)" alt="bush" width="200" height="200">
             </div>
         </div>
     </div>
+
+    <script>
+        let triesCount = 0
+        let animalLocation = 13
+             
+        function check(x){ 
+                let im = document.getElementById(x);
+                if (x == animalLocation){
+                    im.src = "https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/77e25e54b4a28ff187c1d2b3eb.jpg?raw=1"
+                } else {
+                    im.src = "https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-AJ-Hagemann/blob/main/download.jpg?raw=1"
+                    distance(x, animalLocation)
+                }
+     
+            }
+        function distance(pos1, pos2){
+            let distance = 0
+            triesCount++
+            let x = Math.abs(pos1 % 10 - pos2 % 10)
+            let y = Math.abs(Math.floor(pos1 / 10) - Math.floor(pos2 / 10))
+
+            distance = Math.max(x, y)
+
+            document.getElementById("tries").innerHTML = `Number of Tries: ${triesCount}`
+            document.getElementById("distance").innerHTML = `Distance is ${distance}`
+        }
+       
+    </script>
 
 
 </head>
