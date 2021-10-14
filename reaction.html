@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>setTimeout use</title>
+  <title>reaction game</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -11,17 +11,27 @@
 </head>
 <body>
 
-  <h2>Timeout - Red in 3 seconds</h2>
+  <h2>AJ Hagemann reaction timer</h2>
+
+  <button type="button"
+  class="btn btn-primary"
+  onclick="recordReact()">
+  Start Timer</button>
 
   <button type="button"
   class="btn btn-primary"
   onclick="buttonPress2()">
-  Click me change the color.</button>
+  React Now</button>
   
-  <p id="target">I will become red </p>
+  <p id="target">Your time</p>
+  <p id="countdown">Reaction NOW</p>
   
   <script> 
-  function buttonPress1() {
+  myTime = 0
+  function recordReact() {
+    myTime = Date.now()
+    console.log(myTime)
+
     setTimeout(function(){
       document.getElementById('target').style.color = "red"
     }, 3000)
