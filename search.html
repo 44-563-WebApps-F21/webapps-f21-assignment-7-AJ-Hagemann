@@ -70,8 +70,8 @@
         function distance(pos1, pos2){
             let distance = 0
             triesCount++
-            let x = Math.abs(pos1 % 10 - pos2 % 10)
-            let y = Math.abs(Math.floor(pos1 / 10) - Math.floor(pos2 / 10))
+            let x = Math.abs(pos1 % 6 - pos2 % 6)
+            let y = Math.abs(Math.floor(pos1 / 6) - Math.floor(pos2 / 6))
 
             distance = Math.max(x, y)
 

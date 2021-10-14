@@ -13,34 +13,39 @@
 
   <h2>AJ Hagemann reaction timer</h2>
 
-  <button type="button"
-  class="btn btn-primary"
-  onclick="recordReact()">
-  Start Timer</button>
+  <p id="target">Your Time</p>
+  <p id="count">Count</p>
 
-  <button type="button"
-  class="btn btn-primary"
-  onclick="buttonPress2()">
-  React Now</button>
+  <button onclick="startTime()">Start Timer</button>
+  <button onclick="recordReact()">React</button>
   
-  <p id="target">Your time</p>
-  <p id="countdown">Reaction NOW</p>
+  <script>
+  let myTime = undefined
   
-  <script> 
-  myTime = 0
-  function recordReact() {
-    myTime = Date.now()
-    console.log(myTime)
-
-    setTimeout(function(){
-      document.getElementById('target').style.color = "red"
-    }, 3000)
+  function startTime() 
+  {
+    myTime = undefined
+    for(let i = 0; i < 4; i++){
+      setTimeout(() => {
+        document.getElementById("count").innerHTML = `${i}` 
+      }, (3-i)*1000);
+    }
+    setTimeout(() => {
+      if(myTime === undefined){
+        document.getElementById("target").innerHTML = "To Slow"
+      }else{
+        let buttonTime = Date.now()
+        let difference = buttonTime - myTime
+        document.getElementById("target").innerHTML = `Time was: ${difference}`
+      }
+    }, 3000);
   }
 
-  function buttonPress2() {
-    setTimeout(()=>{
-      document.getElementById('target').style.color = "red"
-    }, 3000)
+
+  function recordReact() 
+  {
+    myTime = Date.now()
+    console.log(myTime)
   }
   </script>
 

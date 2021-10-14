@@ -11,26 +11,41 @@
 </head>
 <body>
 
-  <h2>Timeout - Red in 3 seconds</h2>
+  <h2>AJ Hagemann timer</h2>
 
-  <button type="button"
-  class="btn btn-primary"
-  onclick="buttonPress2()">
-  Click me change the color.</button>
+  <p id="target">Your Time</p>
+  <p id="count">Count</p>
+
+  <button onclick="startTime()">Start Timer</button>
+  <button onclick="recordReact()">React</button>
   
-  <p id="target">I will become red </p>
+  <script>
+  let myTime = undefined
   
-  <script> 
-  function buttonPress1() {
-    setTimeout(function(){
-      document.getElementById('target').style.color = "red"
-    }, 3000)
+  function startTime() 
+  {
+    myTime = undefined
+    for(let i = 0; i < 4; i++){
+      setTimeout(() => {
+        document.getElementById("count").innerHTML = `${i}` 
+      }, (3-i)*1000);
+    }
+    setTimeout(() => {
+      if(myTime === undefined){
+        document.getElementById("target").innerHTML = "To Slow"
+      }else{
+        let buttonTime = Date.now()
+        let difference = buttonTime - myTime
+        document.getElementById("target").innerHTML = `Time was: ${difference}`
+      }
+    }, 3000);
   }
 
-  function buttonPress2() {
-    setTimeout(()=>{
-      document.getElementById('target').style.color = "red"
-    }, 3000)
+
+  function recordReact() 
+  {
+    myTime = Date.now()
+    console.log(myTime)
   }
   </script>
 
